@@ -2,6 +2,9 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://mode:Ap123TTb@library-data.2ubiv3w.mongodb.net/Library',{
     useNewUrlParser:true,
     useUnifiedTopology:true
+}).then(()=>{
+    console.log('DB connected book "custom message"');
+
 });
 const Schema = mongoose.Schema;
 

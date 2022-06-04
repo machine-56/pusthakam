@@ -3,7 +3,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://mode:Ap123TTb@library
     useNewUrlParser:true,
     useUnifiedTopology:true
 }).then(()=>{
-    console.log('DB connected "custom message"');
+    console.log('DB connected author "custom message"');
 
 });
 const Schema = mongoose.Schema;

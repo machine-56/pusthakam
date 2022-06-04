@@ -41,8 +41,8 @@ app.get('/',function(req,res){
 
 
 
-const port = process.env.port || 8191;
+// const port = process.env.port || 8191;
 
-app.listen(port,()=>{
-    console.log(`Server Ready on ${port}`); //Part #1 point 5
+app.listen(process.env.port || 8191,()=>{
+    console.log(`Server Ready on8191`); //Part #1 point 5
 });
