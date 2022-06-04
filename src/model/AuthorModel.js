@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
-mongoose.connect( 'mongodb+srv://mode:Ap123TTb@library-data.2ubiv3w.mongodb.net/?retryWrites=true&w=majority',{
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://mode:Ap123TTb@library-data.2ubiv3w.mongodb.net/Library',{
     useNewUrlParser:true,
     useUnifiedTopology:true
+}).then(()=>{
+    console.log('DB connected "custom message"');
+
 });
 const Schema = mongoose.Schema;
 
