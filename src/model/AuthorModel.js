@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://mode:Ap123TTb@library-data.2ubiv3w.mongodb.net/Library',{
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Library', {
     useNewUrlParser:true,
     useUnifiedTopology:true
 }).then(()=>{
